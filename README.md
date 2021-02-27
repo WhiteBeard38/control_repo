@@ -68,3 +68,10 @@ Use the r10k to depoly our code:
   r10k deploy environment -p
   
   
+  ######################
+  Other command:
+  
+  docker exec -it web.puppet.vm bash
+  puppetserver ca list
+  puppetserver ca sign --certname web.puppet.vm
+  puppetserver ca sign --all
