@@ -50,11 +50,10 @@ Install r10k that will be used to deply our code from GitHub to our server:
   gem install r10k
 
 
-Create r10k config directory, and point it to our GitHub repo by adding the below lines "copy the line between ********* ":
+Create r10k config directory, and point it to our GitHub repo by adding the below lines:
   mkdir /etc/puppetlabs/r10k
   vim /etc/puppetlabs/r10k/r10k.yaml
 
-*********
 ---
 :cachedir: '/var/cache/r10k'
 
@@ -62,16 +61,10 @@ Create r10k config directory, and point it to our GitHub repo by adding the belo
         :my-org:
                 remote: 'https://github.com/WhiteBeard38/control_repo.git'
                 basedir: '/etc/puppetlabs/code/environments'
-*********
+
 
 
 Use the r10k to depoly our code:
   r10k deploy environment -p
-
-
-
-
-
-
-
-
+  
+  
